@@ -69,7 +69,7 @@ app.get('/health', (req, res) => {
     });
 });
 
-// Information endpoint
+// GET Information endpoint
 app.get('/api/info', (req, res) => {
     res.json({
         name: 'Task Management API',
@@ -87,6 +87,7 @@ app.get('/', (req, res) => {
         version: '1.0.0',
         endpoints: {
             health: '/health',
+            info: 'GET /api/info',
             register: 'POST /api/register',
             login: 'POST /api/login',
             tasks: 'GET /api/tasks (requires auth)',
