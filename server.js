@@ -69,6 +69,17 @@ app.get('/health', (req, res) => {
     });
 });
 
+// Information endpoint
+app.get('/api/info', (req, res) => {
+    res.json({
+        name: 'Task Management API',
+        version: '1.0.0',
+        status: 'active',
+        uptime: process.uptime(),
+        timestamp: new Date().toISOString()
+    });
+});
+
 // Root endpoint
 app.get('/', (req, res) => {
     res.json({
