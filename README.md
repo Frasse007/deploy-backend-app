@@ -2,6 +2,10 @@
 
 A REST API for managing tasks with user authentication, built with Node.js, Express, and SQLite.
 
+## Link to deployed API
+
+https://deploy-backend-app.onrender.com
+
 ## Features
 
 - User registration and authentication
